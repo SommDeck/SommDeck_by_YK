@@ -12,16 +12,6 @@ from io import StringIO
 
 SHEET_ID = "107NpWDkYD0lhIoC-ewLHZouWJoAfd8GTifBa8YTDMSQ"
 
-# 對應分頁 GID
-TABS = {
-    "Sparkling": "2026459108",
-    "French White": "125950905",
-    "French Red": "1602098318",
-    "USA White": "0",
-    "USA Red": "977503732",
-    "Other Regions": "292673052"
-}
-
 def fetch_and_clean():
     all_wines = []
     base_url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv"
